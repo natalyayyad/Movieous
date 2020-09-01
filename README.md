@@ -12,6 +12,7 @@ into an array-List.
 This layout includes:
 
 3.1: Movie List
+
 3.2: Watch List
 3.3: Rated List
 3.4: Contact Us
