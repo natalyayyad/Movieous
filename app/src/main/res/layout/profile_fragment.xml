@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Addded Scroll view -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ui.home.HomeFragment"
+        android:background="@drawable/wallpaper2">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/profileInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Information"
+            android:textColor="#000"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+
+        <!-- Name label -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileInfo"
+            android:text="Name:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <EditText
+            android:id="@+id/profile_editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profileInfo"
+            android:layout_toRightOf="@+id/profile_name"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"></EditText>
+
+        <!-- Email Label -->
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_name"
+            android:text="Email:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"></TextView>
+        <TextView
+            android:id="@+id/profile_editEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profile_name"
+            android:layout_toRightOf="@+id/profile_email"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+        <!-- Gender Label -->
+        <TextView
+            android:id="@+id/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_email"
+            android:text="Gender:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <TextView
+            android:id="@+id/profile_editGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profile_email"
+            android:layout_toRightOf="@+id/profile_gender"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+        <!-- Phone Label -->
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_gender"
+            android:text="Phone:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <TextView
+            android:id="@+id/profile_editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profile_gender"
+            android:layout_toRightOf="@+id/profile_gender"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+        <CheckBox
+            android:id="@+id/profile_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password?"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16dip"
+            android:layout_marginTop="30dp"
+            android:buttonTint="#000"
+            android:layout_below="@+id/profile_phone"
+            android:layout_marginLeft="50dp"
+            />
+
+        <!-- Password Label -->
+        <TextView
+            android:id="@+id/profile_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_checkBox"
+            android:text="Current Password:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <EditText
+            android:id="@+id/profile_editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="textPassword"
+            android:layout_below="@+id/profile_checkBox"
+            android:layout_toRightOf="@+id/profile_password"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/profile_newPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_password"
+            android:text="New Password:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <EditText
+            android:id="@+id/profile_editNewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_below="@+id/profile_password"
+            android:layout_toRightOf="@+id/profile_newPassword"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/profile_confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_newPassword"
+            android:text="Confirm New Password:"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"></TextView>
+
+        <EditText
+            android:id="@+id/profile_editConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/profile_newPassword"
+            android:layout_toRightOf="@+id/profile_confirmPassword"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Information"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/profile_confirmPassword"
+            android:layout_centerHorizontal="true"
+            ></com.google.android.material.button.MaterialButton>
+    </RelativeLayout>
+</ScrollView>

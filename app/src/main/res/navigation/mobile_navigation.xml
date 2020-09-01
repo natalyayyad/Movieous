@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.movieapp.activities.ui.home.HomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.movieapp.activities.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/nav_movie"
+        android:name="com.example.movieapp.activities.ui.movieList.MovieListFragment"
+        android:label="@string/menu_movieList"
+        tools:layout="@layout/movie_list_fragment" />
+    <fragment
+        android:id="@+id/nav_watch"
+        android:name="com.example.movieapp.activities.ui.watchList.WatchListFragment"
+        android:label="@string/menu_watchList"
+        tools:layout="@layout/watch_list_fragment" />
+    <fragment
+        android:id="@+id/nav_rate"
+        android:name="com.example.movieapp.activities.ui.ratedList.RatedListFragment"
+        android:label="@string/menu_ratedList"
+        tools:layout="@layout/rated_list_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.example.movieapp.activities.ui.contactus.ContactUsFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/contact_us_fragment" />
+
+    <!--
+    <fragment
+        android:id="@+id/nav_logout"
+        android:label="@string/menu_logout"
+        android:name="com.example.movieapp.activities.ui.logout.LogoutFragment"
+        tools:layout="@layout/logout_fragment" /> -->
+
+</navigation>

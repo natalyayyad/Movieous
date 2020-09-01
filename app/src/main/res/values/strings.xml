@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movious</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_movieList">Movie List</string>
+    <string name="menu_watchList">Watch List</string>
+    <string name="menu_ratedList">Rated List</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_logout">Logout</string>
+</resources>

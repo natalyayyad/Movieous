@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MovieDetailsActivity"
+    android:background="@drawable/popcorn2">
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="175dp"
+                android:background="#2d2d2d"
+                android:id="@+id/movie_posterurl"
+                android:scaleType="centerCrop" />
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edges"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Genres -->
+            <TextView
+                android:id="@+id/movie_genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#edecec"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Actors -->
+            <TextView
+                android:id="@+id/movie_actors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#edecec"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Year & Duration & Release Date -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/movie_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/movie_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/movie_releaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <!-- StoryLine -->
+            <TextView
+                android:id="@+id/movie_storyline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@drawable/rounded_edges"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:id="@+id/movieDetails_UserComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments By Movieous Users"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/movieDetails_UserComment"
+                    android:id="@+id/movieDetails_UserCommentEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- Comments Section -->
+                <TextView
+                    android:layout_below="@+id/movieDetails_UserCommentEdit"
+                    android:id="@+id/movieDetails_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add a Comment:"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    />
+                <!-- Comments Section -->
+                <TextView
+                    android:id="@+id/movieDetails_commentView"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_below="@+id/movieDetails_comment"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- Comments Section -->
+                <EditText
+                    android:id="@+id/movieDetails_commentEdit"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:background="@drawable/rounded_edges"
+                    android:layout_below="@+id/movieDetails_comment"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/movieDetails_commentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="comment"
+                    android:gravity="center"
+                    android:layout_below="@+id/movieDetails_commentView"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/watchListButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="Add to Watch List">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ratedListButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Rate"
+                    android:layout_marginLeft="30dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

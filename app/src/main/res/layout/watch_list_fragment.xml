@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ui.watchList.WatchListFragment"
+    android:background="@drawable/theater">
+
+
+    <ImageView
+        android:id="@+id/watch_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo3"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/watch_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/watch_logo"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="-50dp"
+        android:text="Your Watch List"/>
+
+    <View
+        android:id="@+id/watch_divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/watch_textView"
+        android:background="#fff" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/watch_recycleView_id"
+        android:layout_below="@+id/watch_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

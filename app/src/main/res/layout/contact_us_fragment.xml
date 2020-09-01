@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.home.HomeFragment"
+    android:background="@drawable/wallpaper2">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/contactusInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textColor="#000"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/subjectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/contactusInfo"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/contactus_subjectView"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/contactusInfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/subjectLabel"
+        android:background="@drawable/rounded_edges"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/contactus_subjectText"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/contactusInfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/subjectLabel"
+        android:background="@android:color/transparent"
+        android:textSize="20dp"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+       android:id="@+id/contactus_body"
+       android:layout_width="400dp"
+       android:layout_height="400dp"
+       android:layout_below="@+id/subjectLabel"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="30dp"
+       android:background="@drawable/rounded_edges"/>
+
+    <EditText
+        android:id="@+id/contactus_bodyText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subjectLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/contactus_submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/contactus_body"
+        android:layout_centerHorizontal="true"
+        ></com.google.android.material.button.MaterialButton>
+
+
+</RelativeLayout>
