@@ -65,7 +65,7 @@ This layout should have one send button and subject edit-text. The user is requi
 subject text and click on the send button which will open Gmail to send an email to the provider on his 
 main email “movies@movies.com” with email title of customer name and an email body what is stated in 
 the contact us layout edit-text.
-### Logout: 
+#### Logout: 
 Which will log the customer out from this profile and redirect him to the login page.
 
 # The project must be designed using Android packages and must use:
