@@ -30,18 +30,13 @@ with 009705. If all the previous conditions are entered correctly then and only 
 ### 3. Home Layout (Navigation Drawer)
 This layout should be a Navigation Drawer Activity which will contain the navigation bar with the 
 following functionality:
-#### Movie List: 
-which will contain all the movies fetched from the API link. 
-#### Watch List: 
-which will contain all movies added to my watch list. 
-#### Rated List: 
-which will contain all movies rated by the customer, each with its rating. 
-#### Profile: 
-which will allow the customer to change his password and first name.
-#### Contact us: 
-this will redirect the customer to a new layout to help sending an email to the provider.
-#### Logout: 
-which will log the customer out from this profile and redirect him to the login page. 
+- Movie List: which will contain all the movies fetched from the API link. 
+- Watch List: which will contain all movies added to my watch list. 
+- Rated List: which will contain all movies rated by the customer, each with its rating. 
+- Profile: which will allow the customer to change his password and first name.
+- Contact us: this will redirect the customer to a new layout to help sending an email to the provider.
+- Logout: which will log the customer out from this profile and redirect him to the login page. 
+
 #### Movie List: 
 In this List you must use (Recycler View). This list should include all movies where each one should 
 be defined by (Movie Poster (get it from the “posterurl”), title, release date, duration, imdb-Rating and 
